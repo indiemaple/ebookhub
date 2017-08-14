@@ -17,5 +17,10 @@
     "laravel-mix": "^1.0",
     "lodash": "^4.17.4",
     "vue": "^2.1.10"
+  },
+  "dependencies": {
+    "admin-lte": "^2.3.11",
+    "font-awesome": "^4.7.0",
+    "icheck": "^1.0.2"
   }
 }

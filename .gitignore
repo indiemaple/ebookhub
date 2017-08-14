@@ -10,3 +10,5 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 .env
+# Ignore Mac DS_Store files
+.DS_Store

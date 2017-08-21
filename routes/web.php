@@ -12,4 +12,10 @@
 */
 
 Route::get('/', 'PagesController@home');
-Route::get('/login', 'Admin\AdminController@login');
+
+Route::post('/users/store', 'UsersController@store')->name('users.store');
+Route::get('/users/edit', 'UsersController@edit')->name('users.edit');
+Route::get('/users/show', 'UsersController@show')->name('users.show');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -16,8 +16,8 @@
 
         <div id="top-navbar-collapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="nav-docs"><a href="http://d.laravel-china.org" class="no-pjax" target="_blank">文档</a></li>
-                <li ><a href="http://t.laravel-china.org" class="no-pjax" target="_blank">教程</a></li>
+                <li class="nav-docs"><a href="{{ route('books.index') }}" class="no-pjax" target="_blank">电子书</a></li>
+
             </ul>
 
             <div class="navbar-right">
@@ -50,11 +50,7 @@
                                         </a>
                                     </li>
 
-                                    <li>
-                                        <a class="button no-pjax" href="">
-                                            <i class="fa fa-comment text-md"></i> 发起讨论
-                                        </a>
-                                    </li>
+                                   
                                 </ul>
                             </li>
 

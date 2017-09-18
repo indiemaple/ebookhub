@@ -9,4 +9,5 @@
                                        autocapitalize="off" spellcheck="false"> <i class="fa fa-search"></i></div>
     </div>
 </div>
+<script src="/assets/js/scripts.js"></script>
 @stop

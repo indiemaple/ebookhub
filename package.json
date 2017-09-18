@@ -21,6 +21,7 @@
   "dependencies": {
     "admin-lte": "^2.3.11",
     "font-awesome": "^4.7.0",
-    "icheck": "^1.0.2"
+    "icheck": "^1.0.2",
+    "sweetalert": "^1.1.3"
   }
 }

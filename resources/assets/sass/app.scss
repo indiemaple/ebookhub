@@ -1,9 +1,13 @@
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "node_modules/font-awesome/css/font-awesome";
-@import "node_modules/admin-lte/dist/css/AdminLTE";
-@import "node_modules/admin-lte/plugins/iCheck/square/blue";
+@import "vendor/markdown";
+
 
 .jumbotron {
   text-align: center;
+}
+
+.topnav .github-login .btn.login-btn {
+  margin-top: 7px;
 }

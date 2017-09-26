@@ -12635,13 +12635,18 @@ button.close {
 .contentBox li {
   float: left;
   margin-left: 30px;
-  width: 220px;
+  width: 112px;
   display: block;
 }
 
 .contentBox li img {
-  width: 220px;
-  height: 124px;
+  width: 112px;
+  height: 148px;
   display: block;
+}
+
+.contentBox h5 {
+  height: 40px;
+  overflow: hidden;
 }
 

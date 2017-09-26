@@ -9,7 +9,7 @@ class PagesController extends Controller
 {
     public function home()
     {
-        $books = Book::latest()->paginate(12);
+        $books = Book::latest()->paginate(18);
         return view('pages.home', compact('books'));
     }
 }

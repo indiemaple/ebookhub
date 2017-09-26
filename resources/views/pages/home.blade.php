@@ -18,7 +18,7 @@
             <div>
                 <a href="{{ route('books.show', $book->id) }}">
                     <img src="{{ $book->cover }}">
-                    <h5>{{ $book->title }}</h5>
+                    <h5>{{ mb_substr($book->title, 0, 15) }}</h5>
                 </a>
             </div>
         </li>

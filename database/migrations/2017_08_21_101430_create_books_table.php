@@ -17,8 +17,6 @@ class CreateBooksTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->string('title')->index();
-            $table->string('book_baidu_source');
-            $table->string('baidu_source_pass');
             $table->string('cover');
             $table->text('description')->nullable();
             $table->text('body');

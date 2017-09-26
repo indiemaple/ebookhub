@@ -41,7 +41,6 @@ class BooksController extends Controller
         $data['create_at'] = Carbon::now()->toDateTimeString();
         $data['update_at'] = Carbon::now()->toDateTimeString();
         $data['body'] = $request->body;
-        $data['description'] = $request->description;
         $data['baidu_source'] = $request->baidu_source;
         $data['baidu_source_key'] = $request->baidu_source_key;
 

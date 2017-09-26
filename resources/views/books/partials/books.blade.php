@@ -11,14 +11,7 @@
             <div class="count_set">
 
 
-                <span class="count_seperator">/</span>
-
-
-
-                <span class="count_seperator">/</span>
-
-
-                <span class="count_seperator">|</span>
+                <span class="count_seperator"></span>
 
                 <abbr title="{{ $book->updated_at }}" class="timeago">{{ $book->updated_at }}</abbr>
             </div>

@@ -14,7 +14,6 @@ class AddBaiduResourceToBooksTable extends Migration
     public function up()
     {
         Schema::table('books', function (Blueprint $table) {
-            $table->string('cover')->nullable()->comment('封面图');
             $table->string('baidu_source')->nullable()->comment('百度云地址');
             $table->string('baidu_source_key')->nullable();
         });

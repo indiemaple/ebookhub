@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Book;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
     public function home()
     {
-        return view('pages.home');
+        $books = Book::latest()->paginate(12);
+        return view('pages.home', compact('books'));
     }
 }

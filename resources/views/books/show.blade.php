@@ -21,9 +21,26 @@
     </div>
 
     <div class="content-body entry-content panel-body ">
-        <div class="markdown-body" id="emojify">
-            {!! $book->body !!}
+        <div class="row box-shadow">
+            <div class="col-xs-6">
+                <img src="{{ $book->cover }}" class="img-responsive">
+            </div>
+            <div class="col-xs-6">
+                <div class="markdown-body" id="emojify">
+                    {!! $book->body !!}
+                </div>
+            </div>
+
+
         </div>
+        <hr>
+        <div class="row">
+            <div class="col-xs-2">下载链接：</div>
+            <div class="col-xs-2">
+                <a href="{{ route('books.bookSource', $book->id) }}">百度网盘</a>
+            </div>
+        </div>
+
 
     </div>
     <div class="appends-container" data-lang-append="{{ lang('Append') }}">

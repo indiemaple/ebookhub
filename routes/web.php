@@ -31,3 +31,4 @@ Route::get('/books/{id}', 'BooksController@show')->name('books.show');
 Route::post('upload_image', 'BooksController@uploadImage')->name('upload_image')->middleware('auth');
 Route::get('/books/{id}/edit', 'BooksController@edit')->name('books.edit');
 Route::patch('/books/{id}/update', 'BooksController@update')->name('books.update');
+Route::get('/books/{id}/book_source', 'BooksController@bookSource')->name('books.bookSource');

@@ -111,10 +111,29 @@ class BooksController extends Controller
         $markdown = new Markdown();
         $data['body_original'] = $data['body'];
         $data['body'] = $markdown->convertMarkdownToHtml($data['body']);
+        $data['baidu_source'] = $request->baidu_source;
+        $data['baidu_source_key'] = $request->baidu_source_key;
+
+        // 封面图
+        if ($file = $request->file('cover')) {
+            $uploadStatus = app('Ebookhub\Handler\ImageUploadHandler')->uploadImage($file);
+            $data['cover'] = $uploadStatus['filename'];
+        }
 
         $book->update($data);
         Flash::success('更新成功');
         return redirect()->to(route('books.show', ['id' => $id]));
+    }
+
+    /**
+     * 显示书籍资源界面
+     * @param $id
+     * @param Request $request
+     */
+    public function bookSource($id, Request $request)
+    {
+        $book = Book::findOrFail($id);
+        return view('books.book_source', compact('book'));
     }
 
     private function isDuplicate($data)
